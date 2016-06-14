@@ -20,7 +20,7 @@ figure, imshow(uint8(Normal2Image(hologray)));
 [fy,fx] = FindFirstOrderCenter(hologray,HighpassR);
 [yn,xn]=size(hologray);
 [gridx gridy]= meshgrid(1:xn,1:yn);
-R = exp(1i * 2 * pi * (fx/xn.*gridx+fy/yn.*gridy));
+R = exp(1i * 2 * pi * (fx/xn.*gridx+fy/yn.*gridy));      这个是做啥用的？
 
 
 holocorrected1 = (hologray .* R);
